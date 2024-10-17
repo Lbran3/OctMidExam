@@ -7,8 +7,22 @@ method = Bank()
 +printAllCustomerAccountInfo() : void
  */
 
+import java.util.ArrayList;
+
 public class Bank {
+    //add in arrayList customer to customers
+    private ArrayList<Customer> customers;
 
-    private
 
+    public Bank(){
+        this.customers = new ArrayList<>();
+    }
+
+    public void addCustomer(Customer customer){
+
+    }
+    public void printAllCustomerAccountInfo(){
+
+    }
 }
+

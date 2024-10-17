@@ -1,11 +1,11 @@
 
 /*
 accountNumber: int final
-counter: int
+counter: int (underlined meaning static)
 balance: double
 Method: Account()
 
-getAccountType(): AccountType
+getAccountType(): AccountType; (italized in UML so this is an abstract class)
 withdraw (amount : double) : void
 deposit (amount: double) : void
 getInterestRate (balance:double, amount: double) : double
@@ -13,33 +13,39 @@ getTransactionFee (accountType: AccountType): double
 printAccountInfo() : String
 printTotalNumberOfAccounts(): void
  */
-public class Account {
+public abstract class Account {
 
     private final int accountNumber;
     private int counter;
     private double balance;
 
-    public int getCounter() {
-        return counter;
+    public Account(int accountNumber, double balance) {
+        this.accountNumber = accountNumber;
+        this.balance = balance;
+        this.counter = 0;
+    }
+    public abstract String getAccountType();
+
+    public void withdraw(double amount) {
+
     }
 
-    public void setCounter(int counter) {
-        this.counter = counter;
+
+    public void deposit(double amount){
+
     }
+    public double getinterestRate(double balance, double amount){
+        return getinterestRate();
+    }
+
 
     public double getBalance() {
         return balance;
-    }
-
-    public void setBalance(double balance) {
-        this.balance = balance;
     }
 
     public int getAccountNumber() {
         return accountNumber;
     }
 
-    public Account(int accountNumber) {
-        this.accountNumber = accountNumber;
-    }
+
 }

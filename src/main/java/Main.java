@@ -14,6 +14,21 @@ There is withdrawal transactionFee of $10 for all savings accounts
 
   */
     public static void main(String[] args) {
+      //create bank object
+        Bank bank = new Bank();
 
+        //create a checking account named checkingAccount1
+        Checking checkingAccount1 = new Checking();
+        //create a customer account named customer1
+        Customer customer1 = new Customer();
+        //add customer1 to a list of bank customers
+
+        //deposit $2000 into customer 1 checking account
+
+
+
+        //withdraw $100 from customer1 checking
+        // withdraw another $50 from c1 checking
+        //attempt to deposit (-) deposit
     }
 }
